@@ -1,0 +1,6 @@
+{
+  "name": "BhashaBuddy",
+  "description": "AI-powered local language learning and real-world communication companion for college students moving to new Indian regions.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

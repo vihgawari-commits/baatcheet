@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  .font-serif-display {
+    font-family: 'DM Serif Display', Georgia, serif;
+  }
+}
+
+/* Heritage Parchment Subtle Background Texture */
+.bg-parchment {
+  background-color: #F8F4EB;
+  background-image: radial-gradient(circle at 10% 20%, rgba(243, 235, 218, 0.7) 0%, transparent 40%),
+                    radial-gradient(circle at 90% 80%, rgba(239, 227, 203, 0.6) 0%, transparent 40%);
+}
+
+.theme-jaipur-bg {
+  background-color: #FAF4EE;
+  background-image: radial-gradient(circle at 20% 20%, rgba(247, 228, 220, 0.7) 0%, transparent 40%),
+                    radial-gradient(circle at 80% 80%, rgba(242, 218, 208, 0.6) 0%, transparent 40%);
+}
+
+.theme-kolkata-bg {
+  background-color: #F8F5EE;
+  background-image: radial-gradient(circle at 15% 15%, rgba(248, 238, 210, 0.7) 0%, transparent 40%),
+                    radial-gradient(circle at 85% 85%, rgba(240, 225, 195, 0.6) 0%, transparent 40%);
+}
+
+/* Subtle decorative concentric ring pattern as in screenshot */
+.heritage-ring {
+  border: 1.5px solid rgba(163, 59, 39, 0.12);
+  border-radius: 9999px;
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
